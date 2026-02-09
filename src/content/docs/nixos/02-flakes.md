@@ -159,6 +159,10 @@ Soon, we'll be ditching the `nixos-rebuild` command and replacing it with `nh os
 
 You should also now be able to see a new file called `flake.lock` in your `~/nixos` folder. This file is used to track the exact versions of all of your inputs and their inputs
 
+<span style="background-color: #2D4462; font-weight: bold; padding: 1em; display: inline-block; margin: 1em 0;">
+NOTE: Whenever you want to install a new package, make sure once it's added to your files, that you run your rebuild command again.
+</span>
+
 ## Updating inputs
 If you ever want to update an input, run either 
 ```bash
