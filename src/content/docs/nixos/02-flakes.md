@@ -155,7 +155,7 @@ sudo nixos-rebuild switch --flake /home/<your-username>/nixos#torchick
 
 to switch between configurations (in fact, try it out and verify that it works).
 
-Soon, we'll be ditching the `nixos-rebuild` command and replacing it with `nh os rebuild`
+Soon, we'll be ditching the `nixos-rebuild` command and replacing it with `nh os`
 
 You should also now be able to see a new file called `flake.lock` in your `~/nixos` folder. This file is used to track the exact versions of all of your inputs and their inputs
 
