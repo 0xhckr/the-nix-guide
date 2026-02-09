@@ -28,7 +28,7 @@ Nix is commonly referred to as a few different things colloquially:
 
 - A declarative, lazily evaluated, purely functional programming language (which we'll use a lot)
 - A collection of tools that allow you to build reproducible software environments
-- A package manager that is (in my opinion) a discouraged way of installing software
+- A package manager that is (in my opinion) a discouraged way of installing software (kind of)
 - An operating system that uses the aforementioned collection of tools to build reproducible software environments - but acting on the operating system (effectively allowing you to create a highly reproducible and customized operating system)
 
 For the purposes of this guide, the programming language will be referred to as "nix", the package manager as "nix-env", and the operating system as "NixOS". Nix is also the collection of tools but we'll see that most times we're calling those tools, it'll be pretty obvious we're not talking about the language.
@@ -39,7 +39,11 @@ It's important to note that not many people will understand the power of nix for
 
 ### Nix (the language)
 
-Nix is a language that allows you to essentially write instructions for a computer to follow. In the case of NixOS, These instructions could be used to populate your system's dotfiles, install software, apply git patches to pieces of software, and more. In the case of a project, you can use nix to define the dependencies of your project, custom scripts to run, different variations of your project (e.g. a debug build vs a release build), and more.
+Nix is a language that allows you to essentially write instructions for a computer to follow.
+
+In the case of NixOS, These instructions could be used to populate your system's dotfiles, install software, apply git patches to pieces of software, and more.
+
+In the case of a project, you can use nix to define the dependencies of your project, custom scripts to run, different variations of your project (e.g. a debug build vs a release build), and more. (This uses nix, the package manager to install the dependencies - but in a way this guide approves of; more on this later)
 
 The important part of this is the fact that when someone works on the project (or if they want to copy a NixOS setup), they don't need to battle with version mismatches, missing dependencies, or even asking others on how to run certain scripts. They can simply run a variety of the aforementioned nix commands once the project is cloned and have the exact same project or NixOS setup as the author.
 
