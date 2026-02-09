@@ -35,7 +35,7 @@ For the purposes of this guide, the programming language will be referred to as 
 
 ## Why should I care?
 
-It's important to note that not many people will understand the power of nix for their day-to-day use. Nix is easily targettable to developers, sysadmins, general nerds, and the generic linux distro-hopper. That's not to say that nix isn't beneficial to everyone. Realistically, however, I don't think anyone who's not intimately familiar with a text editor and a terminal will use nix.
+It's important to note that not many people will understand the power of nix for their day-to-day use. Nix is easily targettable to developers, sysadmins, general nerds, and the generic linux distro-hopper. That's not to say that nix isn't beneficial to everyone else as well. Realistically, however, I don't think anyone who's not intimately familiar with a text editor and a terminal will configure nix code.
 
 ### Nix (the language)
 
