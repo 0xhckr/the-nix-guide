@@ -156,3 +156,18 @@ sudo nixos-rebuild switch --flake /home/<your-username>/nixos#torchick
 to switch between configurations (in fact, try it out and verify that it works).
 
 Soon, we'll be ditching the `nixos-rebuild` command and replacing it with `nh os rebuild`
+
+You should also now be able to see a new file called `flake.lock` in your `~/nixos` folder. This file is used to track the exact versions of all of your inputs and their inputs
+
+## Updating inputs
+If you ever want to update an input, run either 
+```bash
+nix flake update
+```
+to update all of your inputs, or
+```bash
+nix flake update <input-name>
+```
+to update a single input.
+
+This will only update the flake.lock file, nothing else (including the programs you have installed). To update your system, you'll need to run your rebuild command again.
