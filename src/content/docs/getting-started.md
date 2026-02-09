@@ -11,4 +11,8 @@ Installing NixOS is mostly the same as other Linux distros. [Download the ISO](h
 
 ## nix-darwin
 
+TODO
+
 ## nix in projects
+
+TODO
