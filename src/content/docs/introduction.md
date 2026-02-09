@@ -45,7 +45,7 @@ In the case of NixOS, These instructions could be used to populate your system's
 
 In the case of a project, you can use nix to define the dependencies of your project, custom scripts to run, different variations of your project (e.g. a debug build vs a release build), and more. (This uses nix, the package manager to install the dependencies - but in a way this guide approves of; more on this later)
 
-The important part of this is the fact that when someone works on the project (or if they want to copy a NixOS setup), they don't need to battle with version mismatches, missing dependencies, or even asking others on how to run certain scripts. They can simply run a variety of the aforementioned nix commands once the project is cloned and have the exact same project or NixOS setup as the author.
+The important part of this is the fact that when someone works on the project (or if they want to copy a NixOS setup), they don't need to battle with version mismatches, missing dependencies, or even need to ask others on how to run certain scripts. They can simply run a variety of the aforementioned nix commands once the project is cloned and have the exact same project or NixOS setup as the author.
 
 We're glossing over a lot of other things here (including many other nicities you get with nix), but, I'll mention one last thing I absolutely love about using nix in projects: If I have a version of python installed globally but the project I'm working on requires a specific version, I can run nix-shell (or other commands) and have those binaries symlinked accordingly. When I close my terminal, it's almost as if I never installed that version of python at all.
 
