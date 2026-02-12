@@ -12,10 +12,19 @@ hero:
       icon: right-arrow
 ---
 
-import Card from "~/ui/card.tsx"
+import { Card, CardGrid } from "@astrojs/starlight/components"
 
-<>
-<Card title="Get Started with NixOS">
-  <p>I'd say "Just trust me" but I don't want a bunch of angry peoople knocking at my door at 2am.</p>
-</Card>
-</>
+<CardGrid stagger>
+  <Card title="Install NixOS" icon="nix">
+    Get started with the best Nix experience for your system. <a href="https://nixos.org/download.html" target="_blank" rel="noopener noreferrer"> Download NixOS </a>
+  </Card>
+	<Card title="Check out laptop specific documentation" icon="laptop">
+		Documentation for specific laptop models can be found in the [laptops section](/laptops).
+	</Card>
+	<Card title="Your configuration on git" icon="github">
+		Store your configuration in a git repository. Sync it to a remote server. [Learn more](/git).
+	</Card>
+	<Card title="Awesome Nix" icon="open-book">
+		Learn more in [the Awesome Nix repository](https://github.com/nix-community/awesome-nix).
+	</Card>
+</CardGrid>
