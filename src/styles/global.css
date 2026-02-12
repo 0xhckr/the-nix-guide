@@ -1,1 +1,14 @@
-@import "tailwindcss";
+@layer base, starlight, theme, components, utilities;
+
+@import "@astrojs/starlight-tailwind";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@font-face {
+  font-family: "Departure Mono Nerd Font";
+  src: url("/departure-mono-nerd-font.otf") format("opentype");
+}
+
+:root {
+  --sl-font: "Departure Mono Nerd Font", monospace;
+}
