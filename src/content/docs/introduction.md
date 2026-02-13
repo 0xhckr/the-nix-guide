@@ -20,7 +20,7 @@ The list shown above is not exhaustive (and doesn't even get close to exhausting
 
 ## What is Nix?
 
-<span style="opacity: 0.5; display: block; margin-bottom: 1em;">
+<span class="opacity-50 block mb-4">
   (but for real this time)
 </span>
 
@@ -50,7 +50,7 @@ The important part of this is the fact that when someone works on the project (o
 We're glossing over a lot of other things here (including many other nicities you get with nix), but, I'll mention one last thing I absolutely love about using nix in projects: If I have a version of python installed globally but the project I'm working on requires a specific version, I can run nix-shell (or other commands) and have those binaries symlinked accordingly. When I close my terminal, it's almost as if I never installed that version of python at all.
 
 ### NixOS (the operating system) 
-<span style="opacity: 0.5; display: block; margin-bottom: 1em;">
+<span class="opacity-50 block mb-4">
   (and to some extent, nix-darwin, which is a NixOS like experience for macOS)
 </span>
 
